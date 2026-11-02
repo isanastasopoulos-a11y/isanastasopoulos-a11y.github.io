@@ -19,23 +19,23 @@ a{color:inherit}.brand{display:flex;align-items:center;gap:13px;text-decoration:
 .practice-heading{display:flex;align-items:center;gap:14px;margin:43px 0 15px;font:8px var(--mono);letter-spacing:.1em;color:#8b949d}.practice-heading i{height:1px;background:#d7dad3;flex:1}.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #d7dad3}.practice-grid article{padding:17px 19px 18px;border-right:1px solid #d7dad3}.practice-grid article:last-child{border-right:0}.practice-grid small{font:7px var(--mono);letter-spacing:.08em;color:#8d9d4b}.practice-grid h3{font-size:13px;margin:11px 0 7px;letter-spacing:-.03em}.practice-grid p{font-size:10px;color:#707b86;line-height:1.75;margin:0}
 @media(max-width:760px){.practice-grid{grid-template-columns:1fr}.practice-grid article{border-right:0;border-bottom:1px solid #d7dad3;padding:16px 17px}.practice-grid article:last-child{border-bottom:0}}
 
-/* v5 hero portrait: clear portrait-led composition, with chart kept below the face */
+/* v6 hero portrait: brighter face, restrained overlay, chart kept below the face */
 .hero-visual{isolation:isolate;position:relative;overflow:hidden;background:#111b2d}
 .hero-visual:before{z-index:0}
-.hero-visual:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#111b2d 0%,rgba(17,27,45,.98) 10%,rgba(17,27,45,.78) 37%,rgba(17,27,45,.12) 78%),linear-gradient(0deg,rgba(17,27,45,.86) 0%,rgba(17,27,45,.22) 34%,transparent 62%)}
-.hero-portrait{position:absolute!important;z-index:0!important;inset:0 0 0 auto!important;width:80%!important;height:100%!important;object-fit:cover!important;object-position:center 18%!important;border:0!important;padding:0!important;background:transparent!important;box-shadow:none!important;opacity:1!important}
+.hero-visual:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(17,27,45,.98) 0%,rgba(17,27,45,.88) 18%,rgba(17,27,45,.42) 38%,rgba(17,27,45,0) 68%),linear-gradient(0deg,rgba(17,27,45,.48) 0%,rgba(17,27,45,.10) 27%,transparent 48%)}
+.hero-portrait{position:absolute!important;z-index:0!important;inset:0 0 0 auto!important;width:80%!important;height:100%!important;object-fit:cover!important;object-position:center 18%!important;border:0!important;padding:0!important;background:transparent!important;box-shadow:none!important;opacity:1!important;filter:brightness(1.32) contrast(1.04)!important}
 .visual-top,.visual-title,.visual-bottom,.visual-stamp{z-index:3!important}
 .visual-title{max-width:52%;text-shadow:0 2px 16px #111b2d}
-.signal-graphic{z-index:2!important;left:28px!important;right:28px!important;top:auto!important;bottom:88px!important;height:112px!important;opacity:.48!important}
+.signal-graphic{z-index:2!important;left:28px!important;right:28px!important;top:auto!important;bottom:76px!important;height:96px!important;opacity:.34!important}
 .visual-bottom{z-index:3!important}
-.visual-stamp{top:105px!important;right:28px!important;color:#ffffffb8!important;text-shadow:0 1px 8px #111b2d}
-@media(max-width:1000px){.hero-portrait{width:84%!important;object-position:center 18%!important}.signal-graphic{bottom:82px!important}}
+.visual-stamp{top:105px!important;right:28px!important;color:#ffffffd9!important;text-shadow:0 1px 8px #111b2d}
+@media(max-width:1000px){.hero-portrait{width:84%!important;object-position:center 18%!important}.signal-graphic{bottom:72px!important}}
 @media(max-width:760px){
  .hero-visual{height:430px!important}
- .hero-portrait{width:86%!important;object-position:center 17%!important}
- .hero-visual:after{background:linear-gradient(90deg,#111b2d 0%,rgba(17,27,45,.92) 18%,rgba(17,27,45,.18) 88%),linear-gradient(0deg,rgba(17,27,45,.86) 0%,rgba(17,27,45,.16) 36%,transparent 68%)}
+ .hero-portrait{width:86%!important;object-position:center 17%!important;filter:brightness(1.28) contrast(1.04)!important}
+ .hero-visual:after{background:linear-gradient(90deg,rgba(17,27,45,.96) 0%,rgba(17,27,45,.76) 24%,rgba(17,27,45,.08) 72%,transparent 100%),linear-gradient(0deg,rgba(17,27,45,.42) 0%,rgba(17,27,45,.08) 25%,transparent 48%)}
  .visual-title{max-width:54%;font-size:22px}
- .signal-graphic{left:20px!important;right:20px!important;bottom:82px!important;height:104px!important}
+ .signal-graphic{left:20px!important;right:20px!important;bottom:76px!important;height:90px!important}
  .visual-stamp{right:20px!important;top:98px!important}
 }
 @media(max-width:400px){.hero-portrait{width:90%!important;object-position:center 16%!important}.visual-title{max-width:55%;font-size:20px}}
