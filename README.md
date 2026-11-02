@@ -27,3 +27,10 @@ This revision is intended to replace the files already in the root of `isanastas
 - Food Science & Technology is labelled as studies not completed.
 - The public profile omits date of birth, marital status, children, home address and personal social-media handle.
 - Contact information and LinkedIn are displayed as supplied in the original CV; please verify these before wider distribution.
+
+
+## Version 3 update
+- Replaced the portrait asset with the supplied high-resolution photograph.
+- Updated the hero panel to use a full-height editorial portrait treatment.
+- Added reference-letter-supported achievements: 80% reduction in stand-up preparation time, Script Volt and RT Live Companion.
+- Updated the downloadable CV PDF to include the supplied portrait and the same achievements.

@@ -18,3 +18,11 @@ a{color:inherit}.brand{display:flex;align-items:center;gap:13px;text-decoration:
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.reveal{transition:none;opacity:1;transform:none}}
 .practice-heading{display:flex;align-items:center;gap:14px;margin:43px 0 15px;font:8px var(--mono);letter-spacing:.1em;color:#8b949d}.practice-heading i{height:1px;background:#d7dad3;flex:1}.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #d7dad3}.practice-grid article{padding:17px 19px 18px;border-right:1px solid #d7dad3}.practice-grid article:last-child{border-right:0}.practice-grid small{font:7px var(--mono);letter-spacing:.08em;color:#8d9d4b}.practice-grid h3{font-size:13px;margin:11px 0 7px;letter-spacing:-.03em}.practice-grid p{font-size:10px;color:#707b86;line-height:1.75;margin:0}
 @media(max-width:760px){.practice-grid{grid-template-columns:1fr}.practice-grid article{border-right:0;border-bottom:1px solid #d7dad3;padding:16px 17px}.practice-grid article:last-child{border-bottom:0}}
+
+/* v3 portrait treatment: full-height editorial image, no small cropped frame */
+.hero-visual{isolation:isolate}
+.hero-visual:after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,#111b2d 0%,#111b2d 20%,rgba(17,27,45,.82) 43%,rgba(17,27,45,.18) 100%),linear-gradient(0deg,rgba(17,27,45,.68),transparent 45%)}
+.hero-portrait{position:absolute!important;z-index:-1!important;inset:0 0 0 auto!important;width:78%!important;height:100%!important;object-fit:cover!important;object-position:center 22%!important;border:0!important;padding:0!important;background:transparent!important;box-shadow:none!important;opacity:.88}
+.visual-top,.visual-title,.visual-bottom,.visual-stamp{z-index:2}
+.signal-graphic{z-index:1;top:auto!important;bottom:70px!important;height:155px!important;opacity:.52}
+@media(max-width:760px){.hero-portrait{width:82%!important;object-position:center 20%!important}.hero-visual:after{background:linear-gradient(90deg,#111b2d 0%,rgba(17,27,45,.92) 22%,rgba(17,27,45,.28) 100%),linear-gradient(0deg,rgba(17,27,45,.72),transparent 55%)}}
