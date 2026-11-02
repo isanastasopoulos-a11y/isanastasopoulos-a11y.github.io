@@ -34,3 +34,6 @@ This revision is intended to replace the files already in the root of `isanastas
 - Updated the hero panel to use a full-height editorial portrait treatment.
 - Added reference-letter-supported achievements: 80% reduction in stand-up preparation time, Script Volt and RT Live Companion.
 - Updated the downloadable CV PDF to include the supplied portrait and the same achievements.
+
+
+Version 5: corrected the hero portrait layering and chart position. The portrait is fully visible on the right side of the hero panel; the chart sits in the lower area and does not cover the face.
