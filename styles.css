@@ -26,3 +26,24 @@ a{color:inherit}.brand{display:flex;align-items:center;gap:13px;text-decoration:
 .visual-top,.visual-title,.visual-bottom,.visual-stamp{z-index:2}
 .signal-graphic{z-index:1;top:auto!important;bottom:70px!important;height:155px!important;opacity:.52}
 @media(max-width:760px){.hero-portrait{width:82%!important;object-position:center 20%!important}.hero-visual:after{background:linear-gradient(90deg,#111b2d 0%,rgba(17,27,45,.92) 22%,rgba(17,27,45,.28) 100%),linear-gradient(0deg,rgba(17,27,45,.72),transparent 55%)}}
+
+
+/* v4: clear, intentional portrait composition */
+.hero-visual{isolation:isolate;position:relative;overflow:hidden;background:#111b2d}
+.hero-visual:before{z-index:0}
+.hero-visual:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#111b2d 0%,#111b2d 16%,rgba(17,27,45,.78) 39%,rgba(17,27,45,.08) 76%),linear-gradient(0deg,rgba(17,27,45,.76) 0%,rgba(17,27,45,.12) 32%,transparent 58%)}
+.hero-portrait{position:absolute!important;z-index:0!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;width:78%!important;height:100%!important;object-fit:cover!important;object-position:center 17%!important;border:0!important;padding:0!important;background:transparent!important;box-shadow:none!important;opacity:1!important}
+.visual-top,.visual-title,.visual-bottom,.visual-stamp{z-index:3!important}
+.visual-title{max-width:52%;text-shadow:0 2px 16px #111b2d88}
+.signal-graphic{z-index:2!important;left:28px!important;right:28px!important;top:auto!important;bottom:86px!important;height:118px!important;opacity:.5!important}
+.visual-bottom{z-index:3!important}
+.visual-stamp{top:105px!important;right:28px!important;color:#ffffffb8!important;text-shadow:0 1px 8px #111b2d}
+@media(max-width:760px){
+ .hero-visual{height:430px!important}
+ .hero-portrait{width:83%!important;object-position:center 16%!important}
+ .hero-visual:after{background:linear-gradient(90deg,#111b2d 0%,rgba(17,27,45,.86) 22%,rgba(17,27,45,.12) 88%),linear-gradient(0deg,rgba(17,27,45,.8),rgba(17,27,45,.04) 54%,transparent 72%)}
+ .visual-title{max-width:54%;font-size:22px}
+ .signal-graphic{left:20px!important;right:20px!important;bottom:82px!important;height:105px!important}
+ .visual-stamp{right:20px!important;top:98px!important}
+}
+@media(max-width:400px){.hero-portrait{width:86%!important;object-position:center 16%!important}.visual-title{max-width:55%;font-size:20px}}
