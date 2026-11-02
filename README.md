@@ -1,32 +1,29 @@
 # Ilias Anastasopoulos — Personal Portfolio
 
-A responsive, single-page portfolio website and a one-page CV PDF. The site is built with plain HTML, CSS and JavaScript; it has no build step or framework dependency.
+A responsive, single-page professional portfolio and one-page CV. Built with plain HTML, CSS and JavaScript; no build step or framework is required.
 
-## Publish with GitHub Pages
+## Update the live GitHub Pages site
 
-1. Create a GitHub repository. For a personal site URL, name it `<your-github-username>.github.io`. A project repository name also works, but its URL includes the repository name.
-2. Unzip this archive and upload the files **inside** the `ilias_portfolio_delivery` folder to the repository's root. Keep the `assets/` folder and `.nojekyll` file in place.
-3. Open the repository's **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, then select the `main` branch and `/ (root)` folder. Save.
-5. The Pages settings will show the published site URL when it is available.
+This revision is intended to replace the files already in the root of `isanastasopoulos-a11y.github.io`.
 
-Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+1. Open the repository on GitHub and choose **Add file → Upload files**.
+2. From this package, upload/drag the updated `index.html`, `styles.css`, `script.js`, `cv-source.html`, and `README.md`, plus the entire `assets/` folder. Keep `.nojekyll` in the repository root if it is already present.
+3. Commit the changes to the `main` branch. When GitHub asks whether to replace existing files, confirm the replacement.
+4. Wait for GitHub Pages to redeploy, then refresh `https://isanastasopoulos-a11y.github.io/`.
 
 ## Files
 
-- `index.html` — portfolio content and page structure.
-- `styles.css` — visual design and responsive layouts.
+- `index.html` — portfolio page and updated Kaizen role timeline.
+- `styles.css` — responsive visual design.
 - `script.js` — mobile navigation and subtle scroll reveals.
-- `assets/Ilias-Anastasopoulos-CV.pdf` — recruiter-friendly one-page CV download.
+- `assets/Ilias-Anastasopoulos-CV.pdf` — updated one-page CV with portrait photograph.
+- `assets/ilias-portrait.jpg` — portrait used in the website hero and the CV, sourced from the photo in the original CV.
 - `assets/favicon.svg` — site icon.
-- `cv-source.html` — editable HTML source used to create the PDF CV.
-- `.nojekyll` — tells GitHub Pages to serve the static site directly.
+- `cv-source.html` — editable HTML source for the PDF CV.
 
-## Personalise before publishing
+## Personal details and accuracy
 
-- Check the phone number, email address and LinkedIn URL in `index.html` and `cv-source.html`.
-- Review the role descriptions and dates, especially the Kaizen Gaming role history, before making the site public.
-- The site deliberately omits date of birth, marital status, children, home address and personal social-media handle.
-- The CV source is `cv-source.html`. To update the PDF, open it in a browser and use **Print → Save as PDF**, with paper size A4 and browser headers/footers turned off.
-
-The website uses system font fallbacks and local assets, so it remains usable without loading third-party fonts or scripts.
+- Kaizen Gaming role periods are shown as supplied: Customer Service Specialist (2021–2023), Junior Risk & Fraud Analyst (2023–2024), and Real-Time Analyst (2024–2026).
+- Food Science & Technology is labelled as studies not completed.
+- The public profile omits date of birth, marital status, children, home address and personal social-media handle.
+- Contact information and LinkedIn are displayed as supplied in the original CV; please verify these before wider distribution.
